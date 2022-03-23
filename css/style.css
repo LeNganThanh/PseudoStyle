@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.emmet p:before,
+.emmet p:after {
+  content: " ";
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png)
+    center/cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+}
+.emmet p:after {
+  margin-left: 0.5rem;
+}
+.emmet {
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+.emmet p {
+  margin-bottom: 1rem;
+}
+.emmet p::first-letter {
+  padding-left: 1.5rem;
+}
+/* setting the 5 files with the symbols behinds */
+
+.filePseudo {
+  position: relative;
+  margin-left: 3rem;
+}
+
+.filePseudo li:nth-of-type(1) p:after,
+.filePseudo li:nth-of-type(5) p:after {
+  content: " ";
+  background: url(https://img.icons8.com/officel/64/000000/pdf.png) center/cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  margin: 1.3rem 2rem;
+}
+.filePseudo li:nth-of-type(3) p:after,
+.filePseudo li:nth-of-type(4) p:after {
+  content: " ";
+  background: url(https://img.icons8.com/dusk/64/000000/ms-word.png)
+    center/cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  margin: 1.3rem 2rem;
+}
+.filePseudo li:nth-of-type(2) p:after {
+  content: " ";
+  background: url(https://img.icons8.com/dusk/64/000000/ms-excel.png)
+    center/cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  margin: 1.3rem 2.8rem;
+}
+.filePseudo li {
+  color: black;
+  font-size: 2rem;
+}
+.filePseudo p {
+  font-size: 3rem;
+  line-height: 8rem;
+  color: blue;
+  margin-left: 2rem;
+}
+/* setting the linear - gradient for the 2 footers */
+
+.sandwich01, .sandwich02 {
+  position: relative;
+  border: 1px solid black;
+  padding: 1rem 0;
+  margin: 0 2rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.sandwich01:before,
+.sandwich01:after, .sandwich02:before, .sandwich02:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+}
+.sandwich01:before, .sandwich02:before {
+  background: linear-gradient(to right, rgb(3, 218, 233), yellow);
+  top: 0;
+  left: 0;
+}
+.sandwich01:after,.sandwich02:after {
+  background: linear-gradient(to left, rgb(3, 218, 233), yellow);
+  bottom: 0;
+  left: 0;
+}
+
+.sandwich02 {
+  margin: 2rem 2rem;
+}
