@@ -70,8 +70,7 @@
 }
 /* setting the linear - gradient for the 2 footers */
 
-.sandwich01,
-.sandwich02 {
+.sandwich {
   position: relative;
   border: 1px solid black;
   padding: 1rem 0;
@@ -80,27 +79,24 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
-.sandwich01:before,
-.sandwich01:after,
-.sandwich02:before,
-.sandwich02:after {
+
+.sandwich:before,
+.sandwich:after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1rem;
   left: 0;
 }
-.sandwich01:before,
-.sandwich02:before {
+.sandwich:before {
   background: linear-gradient(to right, rgb(3, 218, 233), yellow);
   top: 0;
 }
-.sandwich01:after,
-.sandwich02:after {
+.sandwich:after {
   background: linear-gradient(to left, rgb(3, 218, 233), yellow);
   bottom: 0;
 }
 
-.sandwich02 {
+.sandwich {
   margin: 2rem 2rem;
 }
